@@ -11,8 +11,8 @@
 
 GitHub 儲存庫 Settings → Pages → Build and deployment → Source 選 GitHub Actions。
 工作流依官方 configure-pages 輸出決定網站基底網址，支援專案子目錄。
-預定網址：https://rochibear.github.io/sealco-dev-journal/
+公開網址：https://rochibear.github.io/sealco-dev-journal/
 RSS：https://rochibear.github.io/sealco-dev-journal/rss.xml
-上述網址要在正式部署成功後才可使用。
+GitHub Actions 已完成正式部署；推送更新後會自動重建。
 
 沒有電子郵件蒐集功能，目前只提供RSS。
