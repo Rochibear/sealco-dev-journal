@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+<title id="title">四方封印路線與驗證狀態</title><desc id="desc">自製配置示意，非遊戲截圖。依序解除西、南、東、中央四個封印，再前往北側Boss房。四封印旁及水池各有商人。</desc>
+<rect width="960" height="520" rx="18" fill="#e8ecdf"/><g font-family="Microsoft JhengHei, sans-serif">
+<text x="30" y="35" fill="#526448" font-size="13">SEALCO / 10.31 / 自製路線示意・非遊戲截圖</text>
+<rect x="24" y="56" width="546" height="438" rx="14" fill="#f9f7ef"/><rect x="590" y="56" width="346" height="438" rx="14" fill="#284c3a"/>
+<text x="48" y="92" fill="#284c3a" font-size="23">四道封印，逐步開路</text>
+<rect x="166" y="166" width="260" height="222" rx="6" fill="#e1ddc7" stroke="#82947a" stroke-width="2"/>
+<path d="M296 166v222M166 277h260" stroke="#dd7650" stroke-width="12"/>
+<path d="M125 277h41M296 388v38M426 277h42M296 166v-30" stroke="#82947a" stroke-width="8"/>
+<circle cx="296" cy="277" r="32" fill="#b4cecb" stroke="#6b9793" stroke-width="2"/>
+<g fill="#467c77" stroke="#f9f7ef" stroke-width="3"><circle cx="104" cy="277" r="23"/><circle cx="296" cy="447" r="23"/><circle cx="490" cy="277" r="23"/><circle cx="296" cy="277" r="23"/></g>
+<rect x="259" y="106" width="74" height="40" rx="8" fill="#b78245"/>
+<g fill="white" font-size="21" text-anchor="middle"><text x="104" y="284">1</text><text x="296" y="454">2</text><text x="490" y="284">3</text><text x="296" y="284">4</text><text x="296" y="133">5</text></g>
+<g fill="#526448" font-size="14" text-anchor="middle"><text x="104" y="318">西側</text><text x="356" y="452">南側</text><text x="490" y="318">東側</text><text x="296" y="329">中央水池</text><text x="387" y="131">Boss 房</text></g>
+<g fill="#d9b35d" stroke="#fff" stroke-width="2"><circle cx="130" cy="253" r="7"/><circle cx="322" cy="424" r="7"/><circle cx="516" cy="253" r="7"/><circle cx="328" cy="253" r="7"/><circle cx="347" cy="293" r="7"/></g>
+<text x="48" y="479" fill="#795e4b" font-size="13">紅線：岩漿邊界　金點：商人　數字：解封順序</text>
+<text x="614" y="99" fill="#d5f47d" font-size="23">這次做到哪裡？</text>
+<g fill="#f4f6e9" font-size="17"><text x="614" y="149">清除守軍 → 靠近水晶按 G</text><text x="614" y="184">四封印旁＋水池，共五名商人</text><text x="614" y="219">解封後開放下一段通道</text><text x="614" y="272">7 段路線・21,315 步</text><text x="614" y="303">實際碰撞與重力模擬通過</text></g>
+<path d="M614 334h298" stroke="#75917e"/><text x="614" y="370" fill="#f2d18d" font-size="18">仍待：完整多人通關驗收</text><text x="614" y="403" fill="#ccdacb" font-size="15">Boss 房精確邊緣碰撞</text><text x="614" y="433" fill="#ccdacb" font-size="15">營火休息與 GitHub Pages</text><text x="614" y="468" fill="#ccdacb" font-size="13">示意圖不代表原版地圖比例。</text>
+</g></svg>
