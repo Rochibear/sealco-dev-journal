@@ -3,3 +3,5 @@
 
 
 .comparison{margin:35px 0}.comparison img{display:block;width:100%;height:auto;border-radius:12px}.comparison figcaption{font-size:11px;color:var(--muted);margin-top:10px}
+
+.journal-gallery{display:grid;gap:24px;margin:28px 0}.journal-figure{margin:0;background:#fff8;border:1px solid var(--line);border-radius:14px;overflow:hidden}.media-kind{display:inline-block;margin:16px 20px 12px;padding:3px 10px;border-radius:20px;background:#e4e9da;color:var(--green);font-size:11px;font-weight:700;letter-spacing:1px}.journal-figure a{display:block;background:#29352f}.journal-figure img{display:block;width:100%;max-height:650px;object-fit:contain;height:auto}.journal-figure figcaption{padding:14px 20px;font-size:12px;line-height:1.8;color:var(--muted)}.issue-note{padding:0 20px 20px;margin:0;display:grid;grid-template-columns:90px 1fr;gap:8px 12px;font-size:13px;line-height:1.8}.issue-note dt{font-weight:700;color:var(--green)}.issue-note dd{margin:0;color:#4b5848}@media(max-width:480px){.issue-note{grid-template-columns:1fr;gap:3px}.issue-note dd{margin-bottom:10px}}
