@@ -1,13 +1,19 @@
 [
   {
     "id": "daily-2026-11-03",
-    "title": "11/3｜單機測試版與 SealCo 官網登場",
+    "title": "11/3｜Fan-made SealOffline 官網與單機測試版",
     "date": "2026-11-03",
     "category": "製作手記",
     "status": "Windows包與官網驗證；Mac封裝待完成",
     "reading": 3,
     "summary": "從開發手記走向遊戲官網：Windows完整執行包、30秒多視角實機介紹，以及保留下來的開發紀錄。網頁多人版封測準備中。",
     "sections": [
+      {
+        "heading": "新的名字，繼續冒險",
+        "paragraphs": [
+          "遊戲名稱定為Fan-made SealOffline，製作署名為SealFans製作。原本的開發手記保留，官網網址與既有下載檔案路徑沿用，讓舊連結仍可使用。"
+        ]
+      },
       {
         "heading": "先把冒險放到你的電腦",
         "paragraphs": [
