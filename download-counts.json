@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-04T10:24:49.500Z",
+  "source": "GitHub Release",
+  "assets": [
+    {
+      "name": "Windows EXE",
+      "count": 24
+    },
+    {
+      "name": "Windows ZIP",
+      "count": 0
+    }
+  ],
+  "total": 24
+}
