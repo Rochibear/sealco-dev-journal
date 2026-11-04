@@ -22,7 +22,9 @@ jobs:
       - name: Build journal and RSS
         env:
           JOURNAL_SITE_URL: ${{ steps.pages.outputs.base_url }}
-        run: node build.mjs
+        run: |
+          node refresh-downloads.mjs || echo "Using last verified download snapshot"
+          node build.mjs
       - name: Validate articles and feeds
         run: node validate.mjs
       - uses: actions/upload-pages-artifact@v4
