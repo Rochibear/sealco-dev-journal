@@ -38,7 +38,8 @@ await writeFile(join(out,'privacy.html'),head('隱私說明 · '+site.title,'本
 await writeFile(join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${site.url}/sitemap.xml\n`);
 await writeFile(join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[site.url,...posts.map(postUrl),site.url+'/privacy.html'].map(url=>`<url><loc>${esc(url)}</loc></url>`).join('')}</urlset>`);
 await writeFile(join(out,'favicon.svg'),'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="13" fill="#274633"/><path d="M18 17h28v8H26v7h18v15H18v-8h18v-6H18z" fill="#d5f47d"/></svg>');
-for(const name of ['style.css','official.css','app.js'])await copyFile(join(root,name),join(out,name));
+for(const name of ['style.css','official.css','app.js','download-counts.json'])await copyFile(join(root,name),join(out,name));
+await copyFile(join(root,'download-stats.mjs'),join(out,'download-stats.js'));
 console.log(JSON.stringify({posts:posts.length,output:out,files:posts.length+9,latest:posts[0].id}));
 
 await cp(join(root,"images"),join(out,"images"),{recursive:true});

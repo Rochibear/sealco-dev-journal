@@ -21,3 +21,11 @@ const classData={
 const classTabs=[...document.querySelectorAll('[data-class]')];
 function selectClass(button){const d=classData[button.dataset.class];if(!d)return;for(const tab of classTabs){const selected=tab===button;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;}document.querySelector('#class-panel').setAttribute('aria-labelledby',button.id);for(const [id,value] of [['class-name',d.name],['class-en',d.en],['class-lead',d.lead],['class-description',d.description]])document.getElementById(id).textContent=value;const image=document.getElementById('class-image');image.src=image.src.replace(/[^/]+$/,d.image);image.alt=d.name+'實機戰鬥';document.getElementById('class-tags').replaceChildren(...d.tags.map(t=>{const el=document.createElement('span');el.textContent=t;return el;}));}
 classTabs.forEach((button,i)=>{button.addEventListener('click',()=>selectClass(button));button.addEventListener('keydown',e=>{let next;if(e.key==='ArrowRight')next=(i+1)%classTabs.length;else if(e.key==='ArrowLeft')next=(i+classTabs.length-1)%classTabs.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=classTabs.length-1;if(next!==undefined){e.preventDefault();classTabs[next].focus();selectClass(classTabs[next]);}});});
+
+// GitHub records completed asset requests, rather than local button clicks.
+if(document.querySelector('#download-total')){
+ const {RELEASE_API,downloadStats}=await import('./download-stats.js');
+ const render=(s,live)=>{document.querySelector('#download-total').textContent='累計下載 '+s.total.toLocaleString('zh-TW')+' 次';document.querySelector('#download-detail').textContent='EXE '+s.assets[0].count+' 次 · ZIP '+s.assets[1].count+' 次 · '+(live?'GitHub即時資料':'最近成功讀取')+' '+new Date(s.checkedAt).toLocaleString('zh-TW')+'（含重複下載，非玩家人數）';};
+ try{const r=await fetch(new URL('./download-counts.json',import.meta.url));if(r.ok)render(await r.json(),false);}catch{}
+ try{const r=await fetch(RELEASE_API,{headers:{Accept:'application/vnd.github+json'},signal:AbortSignal.timeout(10000)});if(!r.ok)throw Error();render(downloadStats(await r.json()),true);}catch{if(document.querySelector('#download-total').textContent==='讀取下載次數…')document.querySelector('#download-total').textContent='下載統計暫時無法讀取';}
+}
